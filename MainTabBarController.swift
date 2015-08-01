@@ -25,6 +25,16 @@ class MainTabBarController: UITabBarController {
         var timelineNavigationController = UINavigationController(rootViewController: timelineView)
         var funnelNavigationController = UINavigationController(rootViewController: funnelView)
         self.setViewControllers([timelineNavigationController, funnelNavigationController], animated: false)
+        
+        UITabBar.appearance().barTintColor = UIColor(red: 0.12, green: 0.35, blue: 0.2, alpha: 0.3)
+        
+//        
+//        let font:UIFont! = UIFont(name: "HelveticaNeue-Bold", size: 10)
+//        let selectedAttributes: NSDictionary! = [NSFontAttributeName: font, NSForegroundColorAttributeName: UIColor(red: 0.12, green: 0.55, blue: 0.3, alpha: 0.9)]
+//        
+//        UITabBarItem.appearance().setTitleTextAttributes(selectedAttributes, forState: UIControlState.Selected)
+//
+//        UITabBar.appearance().tintColor = UIColor(red: 0.12, green: 0.55, blue: 0.3, alpha: 0.9)
 
         // Do any additional setup after loading the view.
     }
